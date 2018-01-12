@@ -69,6 +69,7 @@ class DecisionTreeV2 {
                 maxIGfieldName = fieldName;
             }
         }
+        
         return maxIGfieldName;
     }
 public:
@@ -159,7 +160,7 @@ public:
             unordered_set<string> currentFields = remainderFields.top();
             remainderFields.pop();
             
-            unordered_map<string, int> rootTypes = getTypes(cancers, rootFieldVal);
+            unordered_map<string, int> rootTypes = getTypes(cancers, currentNode->fieldName);
             
             for(auto &type : rootTypes)
             {
