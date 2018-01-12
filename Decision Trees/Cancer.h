@@ -13,6 +13,7 @@
 #include <sstream>
 #include <vector>
 #include <unordered_map>
+#include <unordered_set>
 using namespace std;
 
 class Cancer {
@@ -73,6 +74,15 @@ public:
             cout<<field.second<<" ";
         }
         cout<<endl;
+    }
+    
+    static unordered_set<string> getFields(Cancer &cancer) {
+        unordered_set<string> fields;
+        for(auto &field : cancer.fields)
+        {
+            fields.insert(field.first);
+        }
+        return fields;
     }
 };
 

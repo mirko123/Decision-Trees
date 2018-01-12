@@ -26,6 +26,8 @@
 		1B133BA3200280F10030112D /* Decision Trees */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Decision Trees"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B133BA6200280F10030112D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1B133BAD2002819C0030112D /* FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		1B250DEC2009166B00F2F7D3 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		1B250DED200916D300F2F7D3 /* ParseTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseTree.h; sourceTree = "<group>"; };
 		1B9166502002972E00B78594 /* Cancer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cancer.h; sourceTree = "<group>"; };
 		1B9166512002B25500B78594 /* DecisionTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecisionTree.h; sourceTree = "<group>"; };
 		1BB3DF862005213400CB0D61 /* DecisionTreeV2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecisionTreeV2.h; sourceTree = "<group>"; };
@@ -68,6 +70,8 @@
 				1B9166502002972E00B78594 /* Cancer.h */,
 				1B9166512002B25500B78594 /* DecisionTree.h */,
 				1BB3DF8720053C3F00CB0D61 /* PlayTenis.h */,
+				1B250DEC2009166B00F2F7D3 /* Node.h */,
+				1B250DED200916D300F2F7D3 /* ParseTree.h */,
 			);
 			path = "Decision Trees";
 			sourceTree = "<group>";

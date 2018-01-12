@@ -7,11 +7,12 @@
 //
 
 #include <iostream>
-//#include "Cancer.h"
-#include "PlayTenis.h"
+#include "Cancer.h"
+//#include "PlayTenis.h"
 #include "FileManager.h"
 //#include "DecisionTree.h"
 #include "DecisionTreeV2.h"
+#include "ParseTree.h"
 using namespace std;
 
 
@@ -19,17 +20,29 @@ void test() {
     vector<Cancer> playtenis_;
     vector<string> stringFields;
     
-    string fileName = "data2.txt";
+    string fileName = "data.txt";
     FileManager::ParseFile(fileName, playtenis_);
     
     
     DecisionTreeV2 tree(playtenis_);
+    
+    string line;
+    getline (cin, line, '\n');
+    
+    while(line != "end" && line != "quit" && line != "exit") {
+        Cancer newCancer(line);
+        cout<<ParseTree(tree.root, newCancer)<<endl;
+        
+        getline (cin, line, '\n');
+    }
+    
+//    cout<<ParseTree(tree.root, tree._cancers[0])<<endl;
 //    unordered_map<string, int> types = tree.getTypes(playtenis_,"age");
     
-    vector<Cancer> filt = tree.filterClass(playtenis_, "Outlook", "Rainy");
- 
-    cout<<tree.calculateEntropy(filt)<<endl;
-    cout<<tree.calculateInformationGain(playtenis_,"Windy")<<endl;
+//    vector<Cancer> filt = tree.filterClass(playtenis_, "Outlook", "Rainy");
+// 
+//    cout<<tree.calculateEntropy(filt)<<endl;
+//    cout<<tree.calculateInformationGain(playtenis_,"Windy")<<endl;
     
 }
 
